@@ -7,7 +7,6 @@
 - dimension.json -> zawiera wyskość, szerokość oraz pojemność bagażnika dla 10 wymiarów
 - procuder.json -> zawiera markę oraz model 10 pojazdów
 
-
 ####W car.json istnieją 6 auta marki BMW
 - 4 z tych aut posiadają automatyczną skrzynię biegów
 - 4 z tych aut posiadają pojemność bagażnika większą niż 300

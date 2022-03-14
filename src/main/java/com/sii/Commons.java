@@ -14,7 +14,6 @@ public class Commons {
     }
 
     public void validateMarketIndex(Action action, int index) {
-        System.out.println("Size Market: " + action.getMarkets().size());
         if (action.getMarkets().size() <= index) throw new AssertionError("Wrong index (" + index +
                 ") of market. Maximum allowable index is " + (action.getMarkets().size() - 1));
     }
