@@ -1,8 +1,23 @@
 # Lekcja nr 4
 
+## Założenia:
+####Spis jsonów:
+- car.json -> zawiera dane dla 15 aut
+- country.json -> zawiera nazwy oraz symbole 5 państw
+- dimension.json -> zawiera wyskość, szerokość oraz pojemność bagażnika dla 10 wymiarów
+- procuder.json -> zawiera markę oraz model 10 pojazdów
 
 
-Źródła - Dziedziczenie a kompozycja - Dziedziczenie a kompozycja - Blog mocno techniczny (recompiled.pl)
+####W car.json istnieją 6 auta marki BMW
+- 4 z tych aut posiadają automatyczną skrzynię biegów
+- 4 z tych aut posiadają pojemność bagażnika większą niż 300
+- 2 z tych aut spełniają oba powyższe warunki
+
+####Odpowiedzią powinny być dwa auta marki BMW model M2 oraz M3 dostępne kolejno w:
+- France - F, Germany - G, Spain - S
+- Belgium - B, Spain - S, Germany - G
+
+## Treść Polecenia:
 
 Zadanie domowe:
 1. Napisz klasę Car. Jest to klasa główna, agregująca inne klasy, która posiada następujące elementy:
@@ -31,4 +46,3 @@ Zadanie domowe:
 
 4. Utwórz metodę w klasie Car, która przeszuka wszystkie obiekty i wypisze na konsoli kraj - countryName, oraz oznaczenie kraju - countrySign (w formacie: Poland - P) 
 gdzie producentem jest BMW, z automatyczną skrzynią biegów oraz pojemnością bagażnika - trankCapacity większą niż 300 litrów.
-

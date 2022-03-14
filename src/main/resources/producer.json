@@ -1,0 +1,42 @@
+[
+  {
+    "model": "BMW",
+    "type": "M5"
+  },
+  {
+    "model": "Mazda",
+    "type": "6"
+  },
+  {
+    "model": "BMW",
+    "type": "M3"
+  },
+  {
+    "model": "Honda",
+    "type": "Civic"
+  },
+  {
+    "model": "Mazda",
+    "type": "3"
+  },
+  {
+    "model": "BMW",
+    "type": "E60"
+  },
+  {
+    "model": "Audi",
+    "type": "A5"
+  },
+  {
+    "model": "Audi",
+    "type": "A8"
+  },
+  {
+    "model": "BMW",
+    "type": "M2"
+  },
+  {
+    "model": "Mercedes",
+    "type": "Amg"
+  }
+]

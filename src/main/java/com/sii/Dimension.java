@@ -27,7 +27,7 @@ public class Dimension {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return height + " " + width + " " + tankCapacity;
     }
 }

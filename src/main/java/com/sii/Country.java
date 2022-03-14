@@ -21,7 +21,7 @@ public class Country {
     }
 
     @Override
-    public String toString(){
-        return countryName + " " + countrySign;
+    public String toString() {
+        return countryName + " - " + countrySign;
     }
 }

@@ -1,0 +1,52 @@
+  [
+    {
+      "height": 4900,
+      "width": 2100,
+      "tankCapacity": 250
+    },
+    {
+      "height": 5200,
+      "width": 2300,
+      "tankCapacity": 380
+    },
+    {
+      "height": 5400,
+      "width": 2500,
+      "tankCapacity": 400
+    },
+    {
+      "height": 4800,
+      "width": 2000,
+      "tankCapacity": 240
+    },
+    {
+      "height": 4900,
+      "width": 2100,
+      "tankCapacity": 290
+    },
+    {
+      "height": 5100,
+      "width": 2200,
+      "tankCapacity": 310
+    },
+    {
+      "height": 5140,
+      "width": 2450,
+      "tankCapacity": 350
+    },
+    {
+      "height": 5210,
+      "width": 2340,
+      "tankCapacity": 450
+    },
+    {
+      "height": 4210,
+      "width": 2010,
+      "tankCapacity": 200
+    },
+    {
+      "height": 4110,
+      "width": 2140,
+      "tankCapacity": 150
+    }
+  ]

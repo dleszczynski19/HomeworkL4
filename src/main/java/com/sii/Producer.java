@@ -21,7 +21,7 @@ public class Producer {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return model + " " + type;
     }
 }

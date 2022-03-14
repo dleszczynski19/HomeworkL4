@@ -1,0 +1,167 @@
+[
+  {
+    "producerIndex": 0,
+    "isAutomatic": true,
+    "marketIndex": 0,
+    "segmentIndex": 0,
+    "dimensions": [
+      0,
+      3,
+      4
+    ]
+  },
+  {
+    "producerIndex": 1,
+    "isAutomatic": false,
+    "marketIndex": 2,
+    "segmentIndex": 2,
+    "dimensions": [
+      5,
+      0,
+      7
+    ]
+  },
+  {
+    "producerIndex": 2,
+    "isAutomatic": true,
+    "marketIndex": 3,
+    "segmentIndex": 1,
+    "dimensions": [
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "producerIndex": 3,
+    "isAutomatic": true,
+    "marketIndex": 0,
+    "segmentIndex": 0,
+    "dimensions": [
+      4,
+      6,
+      9
+    ]
+  },
+  {
+    "producerIndex": 4,
+    "isAutomatic": false,
+    "marketIndex": 1,
+    "segmentIndex": 1,
+    "dimensions": [
+      1,
+      4,
+      8
+    ]
+  },
+  {
+    "producerIndex": 5,
+    "isAutomatic": false,
+    "marketIndex": 0,
+    "segmentIndex": 1,
+    "dimensions": [
+      1,
+      2,
+      7
+    ]
+  },
+  {
+    "producerIndex": 6,
+    "isAutomatic": true,
+    "marketIndex": 4,
+    "segmentIndex": 2,
+    "dimensions": [
+      7,
+      8,
+      9
+    ]
+  },
+  {
+    "producerIndex": 7,
+    "isAutomatic": false,
+    "marketIndex": 0,
+    "segmentIndex": 0,
+    "dimensions": [
+      1,
+      0,
+      3
+    ]
+  },
+  {
+    "producerIndex": 8,
+    "isAutomatic": true,
+    "marketIndex": 1,
+    "segmentIndex": 2,
+    "dimensions": [
+      1,
+      3,
+      5
+    ]
+  },
+  {
+    "producerIndex": 9,
+    "isAutomatic": true,
+    "marketIndex": 3,
+    "segmentIndex": 1,
+    "dimensions": [
+      1,
+      2,
+      9
+    ]
+  },
+  {
+    "producerIndex": 8,
+    "isAutomatic": false,
+    "marketIndex": 1,
+    "segmentIndex": 2,
+    "dimensions": [
+      1,
+      3,
+      5
+    ]
+  },
+  {
+    "producerIndex": 8,
+    "isAutomatic": true,
+    "marketIndex": 1,
+    "segmentIndex": 2,
+    "dimensions": [
+      0,
+      3,
+      4
+    ]
+  },
+  {
+    "producerIndex": 7,
+    "isAutomatic": false,
+    "marketIndex": 0,
+    "segmentIndex": 0,
+    "dimensions": [
+      1,
+      0,
+      3
+    ]
+  },
+  {
+    "producerIndex": 6,
+    "isAutomatic": true,
+    "marketIndex": 1,
+    "segmentIndex": 2,
+    "dimensions": [
+      1,
+      3,
+      5
+    ]
+  },
+  {
+    "producerIndex": 9,
+    "isAutomatic": true,
+    "marketIndex": 3,
+    "segmentIndex": 1,
+    "dimensions": [
+      1,
+      2,
+      9
+    ]
+  }
+]

@@ -23,7 +23,7 @@ public class Market {
     }
 
     @Override
-    public String toString(){
-        return name + " " + countries.toString();
+    public String toString() {
+        return "Country: " + name + "\n Sign: " + countries.toString();
     }
 }

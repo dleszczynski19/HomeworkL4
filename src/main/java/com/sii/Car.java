@@ -1,19 +1,14 @@
 package com.sii;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-
-import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.Map;
 
-public class Car {
+public class Car extends Commons {
 
     private Producer producer;
     private boolean isAutomaticGear;
     private Market market;
-    private String segment; //standard, medium, premium
+    private String segment;
     private ArrayList<Dimension> dimension = new ArrayList<>();
     private ArrayList<Car> cars = new ArrayList<>();
 
@@ -25,6 +20,10 @@ public class Car {
         this.isAutomaticGear = isAutomaticGear;
         this.market = market;
         this.segment = segment;
+        this.dimension = dimension;
+    }
+
+    public void setDimension(ArrayList<Dimension> dimension) {
         this.dimension = dimension;
     }
 
@@ -48,24 +47,14 @@ public class Car {
         return market;
     }
 
-    public String getSegment() {
-        return segment;
-    }
-
-    public String setSegment(int segmentIndex) { //TODO add validator
+    public String setSegment(int segmentIndex) {
         List<String> segments = List.of("standard", "medium", "premium");
+        validateSegmentIndex(segmentIndex, segments);
         return segments.get(segmentIndex);
     }
 
-    public void setDimension(ArrayList<Dimension> dimension, int firstDim, int secondDim, int thirdDim) {
-
-        this.dimension.add(dimension.get(firstDim));
-        this.dimension.add(dimension.get(secondDim));
-        this.dimension.add(dimension.get(thirdDim));
-    }
-
     @Override
-    public String toString(){
+    public String toString() {
         return "Producer: " + producer + "\nAutomatic: " + isAutomaticGear + "\nMarket: " + market + "\nSegment: "
                 + segment + "\nDimension: " + dimension;
     }
