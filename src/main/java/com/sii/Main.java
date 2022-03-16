@@ -1,12 +1,14 @@
 package com.sii;
 
+import data.DataGenerator;
+
 public class Main {
     public static void main(String[] args) {
-        Action action = new Action();
+        DataGenerator action = new DataGenerator();
         Car car = new Car();
 
-        action.fillObjectCollection(Action.ObjectType.ALL);
+        action.fillObjectCollection(DataGenerator.ObjectType.ALL);
         action.fillCarObject(car);
-        action.filterCars(car);
+        action.printCars(action.filterCars(car, "BmW", true, 300));
     }
 }

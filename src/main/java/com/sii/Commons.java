@@ -1,5 +1,7 @@
 package com.sii;
 
+import data.DataGenerator;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,12 +10,12 @@ public class Commons {
     public static final String colorGreen = "\u001B[32m";
     public static final String colorBlue = "\u001B[34m";
 
-    public void validateProducerIndex(Action action, int index) {
+    public void validateProducerIndex(DataGenerator action, int index) {
         if (action.getProducers().size() <= index) throw new AssertionError("Wrong index (" + index +
                 ") of producer. Maximum allowable index is " + (action.getProducers().size() - 1));
     }
 
-    public void validateMarketIndex(Action action, int index) {
+    public void validateMarketIndex(DataGenerator action, int index) {
         if (action.getMarkets().size() <= index) throw new AssertionError("Wrong index (" + index +
                 ") of market. Maximum allowable index is " + (action.getMarkets().size() - 1));
     }

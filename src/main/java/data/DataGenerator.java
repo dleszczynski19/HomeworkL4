@@ -1,7 +1,8 @@
-package com.sii;
+package data;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.sii.*;
 
 import java.io.File;
 import java.io.IOException;
@@ -10,8 +11,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
+import java.util.stream.Collectors;
 
-public class Action extends Commons {
+public class DataGenerator extends Commons {
     private ArrayList<Producer> producers = new ArrayList<>();
     private ArrayList<Country> countries = new ArrayList<>();
     private ArrayList<Dimension> dimensions = new ArrayList<>();
@@ -62,10 +64,10 @@ public class Action extends Commons {
                     System.out.println(colorGreen + markets.size() + " markets added." + colorReset);
                     break;
                 case ALL:
-                    fillObjectCollection(Action.ObjectType.PRODUCER);
-                    fillObjectCollection(Action.ObjectType.COUNTRY);
-                    fillObjectCollection(Action.ObjectType.DIMENSION);
-                    fillObjectCollection(Action.ObjectType.MARKET);
+                    fillObjectCollection(DataGenerator.ObjectType.PRODUCER);
+                    fillObjectCollection(DataGenerator.ObjectType.COUNTRY);
+                    fillObjectCollection(DataGenerator.ObjectType.DIMENSION);
+                    fillObjectCollection(DataGenerator.ObjectType.MARKET);
                     break;
             }
         } catch (Exception ex) {
@@ -118,15 +120,19 @@ public class Action extends Commons {
         car.setDimension(new ArrayList<>());
     }
 
-    public void filterCars(Car car) {
+    public List<Car> filterCars(Car car, String model, boolean isAutomaticGear, int minCapacity) {
+        return car.getCars().stream()
+                .filter(p -> p.getProducer().getModel().equals(model.toUpperCase()))
+                .filter(a -> a.isAutomaticGear() == isAutomaticGear)
+                .filter(car1 -> car1.getDimension().get(0).getTankCapacity() > minCapacity ||
+                        car1.getDimension().get(1).getTankCapacity() > minCapacity ||
+                        car1.getDimension().get(2).getTankCapacity() > minCapacity)
+                .collect(Collectors.toList());
+    }
+
+    public void printCars(List<Car> cars) {
         System.out.println("Odpowiedź:" + colorBlue);
-        car.getCars().stream()
-                .filter(p -> p.getProducer().getModel().equals("BMW"))
-                .filter(Car::isAutomaticGear)
-                .filter(car1 -> car1.getDimension().get(0).getTankCapacity() > 300 ||
-                        car1.getDimension().get(1).getTankCapacity() > 300 ||
-                        car1.getDimension().get(2).getTankCapacity() > 300)
-                .map(Car::getMarket)
+        cars.stream().map(Car::getMarket)
                 .map(Market::getCountries)
                 .forEach(System.out::println);
     }
