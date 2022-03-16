@@ -3,8 +3,8 @@ package com.sii;
 import java.util.List;
 
 public class Market {
-    public String name;
-    public List<Country> countries;
+    private String name;
+    private List<Country> countries;
 
     public Market() {
     }

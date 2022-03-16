@@ -1,8 +1,8 @@
 package com.sii;
 
 public class Country {
-    String countryName;
-    char countrySign;
+    private String countryName;
+    private char countrySign;
 
     public Country() {
     }
